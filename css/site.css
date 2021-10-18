@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 
 * {
     margin: 0;
@@ -7,14 +8,30 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary: hsl(0, 7%, 14%);
+    --secondary: hsl(192, 100%, 99%);
+}
+
 body {
-    color: rgb(27, 24, 24);
-    background-color: rgb(233, 233, 233);
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+body.dark-theme {
+    background-color: var(--primary);
+    color: var(--secondary)
+}
+
+body.light-theme {
+    background-color: var(--secondary);
+    color: var(--primary);
 }
 
 .hero-banner {
     background-image: url('../assets/dark-portal.jpg');
-    background-position: center;
+    background-position: top;
     background-size: cover;
+    min-height: 25vh;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 }
