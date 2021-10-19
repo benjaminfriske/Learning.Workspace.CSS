@@ -29,9 +29,26 @@ body.light-theme {
 }
 
 .hero-banner {
-    background-image: url('../assets/dark-portal.jpg');
+    background-image: linear-gradient(to bottom, hsla(240, 100%, 10%, 0.76), hsla(39, 100%, 13%, 0.651)), url('../assets/dark-portal.jpg');
     background-position: top;
     background-size: cover;
-    min-height: 25vh;
-    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    min-height: 75vh;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.hero-banner h1 {
+    font-weight: 100;
+    letter-spacing: 1rem;
+    white-space: nowrap;
+    /* text-transform: uppercase; */
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.center > * {
+    transform: translate(-50%,-50%);
 }
