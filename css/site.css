@@ -40,7 +40,13 @@ body.light-theme {
     font-weight: 100;
     letter-spacing: 1rem;
     white-space: nowrap;
+    backface-visibility: hidden;
+
     /* text-transform: uppercase; */
+    animation-name: myQuickAnimation;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
 }
 
 .center {
@@ -51,4 +57,14 @@ body.light-theme {
 
 .center > * {
     transform: translate(-50%,-50%);
+}
+
+
+@keyframes myQuickAnimation {
+    0%{
+        transform: translate(500px, -50%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
 }
