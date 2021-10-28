@@ -13,9 +13,9 @@
     --secondary: hsl(192, 100%, 99%);
 }
 
-body, span {
+body, h5, h4, h3, h2, h1, p, span {
     font-family: 'Roboto', sans-serif;
-    font-weight: 900;
+    font-weight: 400;
 }
 
 body.dark-theme {
@@ -82,6 +82,7 @@ body.light-theme {
     color:black;
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
     z-index: 99;
+    font-weight: 100;
 }
 .quote-shadow {
     position: absolute;
