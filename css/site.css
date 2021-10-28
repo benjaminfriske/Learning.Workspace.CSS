@@ -9,7 +9,7 @@
 }
 
 :root {
-    --primary: hsl(0, 7%, 14%);
+    --primary: hsl(243deg 95% 8%);;
     --secondary: hsl(192, 100%, 99%);
 }
 
@@ -104,6 +104,21 @@ body.light-theme {
     width: 300px;
     position: relative;
     z-index: 100;
+}
+
+.btn {
+    border-radius: 25px;
+    display: inline-block;
+    padding: 1rem;
+    background-color: #7e9888;
+    color: white;
+    text-transform: uppercase;
+}
+
+.btn-gold:hover {
+    color:white;
+    background: radial-gradient(ellipse at top, #7e9888, transparent),
+    radial-gradient(ellipse at bottom, #b78846, transparent);
 }
 
 @keyframes hireMeTransition {
